@@ -101,8 +101,8 @@ const Hero = () => {
     <section className="relative h-[85vh] md:h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0 text-[0]">
         <img 
-          src="/벚꽃사진.jpg" 
-          alt="벚꽃놀이 하는 어르신들" 
+          src="/src/벚꽃사진.jpg" 
+          alt="여수 청춘드림 주간보호센터 벚꽃 나들이" 
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
@@ -159,8 +159,8 @@ const RepresentativeGreeting = () => {
           >
             <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl relative z-10 border-4 border-brand-secondary text-[0]">
               <img 
-                src="/대표님 사진.jpg" 
-                alt="김희영 대표님" 
+                src="/src/대표님 사진.jpg" 
+                alt="여수 청춘드림 주간보호센터 김희영 대표" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -239,7 +239,7 @@ const StorySection = () => {
           </div>
           
           <div className="mt-12 rounded-2xl overflow-hidden shadow-lg border-4 border-white text-[0]">
-            <img src="/벚꽃사진1.jpg" alt="벚꽃놀이 사진" className="w-full h-80 object-cover" />
+            <img src="/src/벚꽃사진1.jpg" alt="여수 청춘드림 주간보호센터 봄 나들이 활동" className="w-full h-80 object-cover" />
           </div>
         </motion.div>
       </div>
@@ -266,13 +266,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ icon: Icon, title, desc, img 
             <img 
               key={idx} 
               src={src} 
-              alt={`${title} ${idx + 1}`} 
+              alt={`여수 청춘드림 주간보호센터 - ${title} ${idx + 1}`} 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" 
             />
           ))}
         </div>
       ) : (
-        <img src={img} alt={title} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+        <img src={img} alt={`여수 청춘드림 주간보호센터 - ${title}`} className="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
       )}
     </div>
     <div className="p-8 flex-grow">
@@ -290,37 +290,37 @@ const Services = () => {
     {
       title: "사이좋은 친구들",
       desc: "또래 어르신들과 마음을 나누며 정답게 어울리는 청춘드림의 일상이자 소중한 추억입니다.",
-      img: "/사이좋은 친구들.jpg",
+      img: "/src/사이좋은 친구들.jpg",
       icon: Users
     },
     {
       title: "정성스런 생신잔치",
       desc: "어르신의 소중한 날, 온 센터 어르신들과 직원들이 함께 축하하며 특별한 추억을 만듭니다.",
-      img: "/생신잔치사진.jpg",
+      img: "/src/생신잔치사진.jpg",
       icon: Sparkles
     },
     {
       title: "재활 및 물리치료",
       desc: "건강한 신체를 위한 맞춤형 재활 운동과 물리치료 서비스를 통해 생활의 활력을 드립니다.",
-      img: ["/물리치료사진.jpg", "/물리치료.jpg"],
+      img: ["/src/물리치료사진.jpg", "/src/물리치료.jpg"],
       icon: Activity
     },
     {
        title: "프리미엄 슬링 운동",
        desc: "전문 슬링 장비를 이용한 근력 강화 및 체형 교정 프로그램으로 신체 기능을 회복합니다.",
-       img: "/슬링사진.jpg",
+       img: "/src/슬링사진.jpg",
        icon: Activity
     },
     {
-      title: "이미용&목욕서비스",
-      desc: "어르신들의 깔끔하고 단정한 용모 유지를 위해 주기적으로 이미용 및 목욕 서비스를 제공합니다.",
-      img: "/이미용사진.jpg",
+      title: "이미용 서비스",
+      desc: "어르신들의 깔끔하고 단정한 용모 유지를 위해 주기적으로 이미용 상담 및 서비스를 제공합니다.",
+      img: "/src/이미용사진.jpg",
       icon: Smile
     },
     {
       title: "따뜻한 초청공연",
       desc: "어르신들의 흥을 돋우고 즐거움을 선사하는 다채로운 외부 공연 프로그램을 진행합니다.",
-      img: "/안아드리는사진.jpg",
+      img: "/src/안아드리는사진.jpg",
       icon: Sparkles
     }
   ];
